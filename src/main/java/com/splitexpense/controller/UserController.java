@@ -17,7 +17,10 @@ import com.splitexpense.service.UserService;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins =  {
+    "http://localhost:5173",
+    "https://split-expense-backend-iemv.onrender.com"
+})
 public class UserController {
 
     @Autowired

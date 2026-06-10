@@ -1,15 +1,27 @@
 package com.splitexpense.controller;
 
-import com.splitexpense.dto.*;
-import com.splitexpense.service.ExpenseService;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.splitexpense.dto.ExpenseRequest;
+import com.splitexpense.dto.ExpenseResponse;
+import com.splitexpense.service.ExpenseService;
 
 @RestController
 @RequestMapping("/api/expenses")
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins =  {
+    "http://localhost:5173",
+    "https://split-expense-backend-iemv.onrender.com"
+})
 public class ExpenseController {
 
     @Autowired
