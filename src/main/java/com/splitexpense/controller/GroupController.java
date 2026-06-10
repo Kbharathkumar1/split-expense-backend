@@ -20,7 +20,7 @@ import com.splitexpense.service.GroupService;
 @RequestMapping("/api/groups")
 @CrossOrigin(origins =  {
     "http://localhost:5173",
-    "https://split-expense-backend-iemv.onrender.com"
+    "https://split-expense-frontend-qp0kzyco9-bharaths-projects-2975e4f1.vercel.app"
 })
 public class GroupController {
 
