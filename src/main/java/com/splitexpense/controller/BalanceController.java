@@ -19,7 +19,7 @@ import com.splitexpense.service.BalanceService;
 @RequestMapping("/api/balances")
 @CrossOrigin(origins =  {
     "http://localhost:5173",
-    "https://split-expense-frontend-qp0kzyco9-bharaths-projects-2975e4f1.vercel.app"
+     "https://split-expense-frontend-eta.vercel.app"
 })
 public class BalanceController {
 
